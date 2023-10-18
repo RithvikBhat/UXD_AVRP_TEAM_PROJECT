@@ -1,0 +1,169 @@
+{
+    "m_SelectedDeviceId": "1WMHH842PP1042",
+    "m_SelectedPackage": {
+        "deviceId": "FA1842R00254",
+        "name": "com.HCIG.LearningLabVR_TEST_TEST",
+        "processId": 12267,
+        "exited": false
+    },
+    "m_SelectedPriority": 2,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "FA1842R00471",
+            "name": "com.HCIG.LerningLabVR",
+            "processId": 10103,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00471",
+            "name": "com.HCIG.LerningLabVR",
+            "processId": 29111,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00471",
+            "name": "com.HCIG.LerningLabVR",
+            "processId": 2041,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00471",
+            "name": "com.HCIG.LerningLabVR",
+            "processId": 7676,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00471",
+            "name": "com.HCIG.LerningLabVR",
+            "processId": 13823,
+            "exited": false
+        },
+        {
+            "deviceId": "FA1842R00254",
+            "name": "com.HCIG.LearningLabVR_TEST_TEST",
+            "processId": 21468,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00254",
+            "name": "com.HCIG.LearningLabVR_TEST_TEST",
+            "processId": 9470,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00254",
+            "name": "com.HCIG.LearningLabVR_TEST_TEST",
+            "processId": 10563,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00254",
+            "name": "com.HCIG.LearningLabVR_TEST_TEST",
+            "processId": 11330,
+            "exited": true
+        },
+        {
+            "deviceId": "FA1842R00254",
+            "name": "com.HCIG.LearningLabVR_TEST_TEST",
+            "processId": 12267,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH842PP1042",
+            "name": "com.HCIG.LearningLabVR",
+            "processId": 27193,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH842PP1042",
+            "name": "com.HCIG.LearningLabVR",
+            "processId": 11153,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH842PP1042",
+            "name": "com.HCIG.LearningLabVR",
+            "processId": 13406,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH842PP1042",
+            "name": "com.HCIG.LearningLabVR",
+            "processId": 15697,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH842PP1042",
+            "name": "com.HCIG.LearningLabVR",
+            "processId": 18034,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": true
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_FilterOptions": {
+        "m_Filter": "",
+        "m_UseRegularExpressions": true,
+        "m_MatchCase": true
+    },
+    "m_SymbolPaths": [],
+    "m_CaptureVideoSettings": {
+        "TimeLimitEnabled": false,
+        "TimeLimit": 180,
+        "VideoSizeEnabled": false,
+        "VideoSizeX": 1280,
+        "VideoSizeY": 720,
+        "BitRateEnabled": false,
+        "BitRateK": 20000,
+        "DisplayIdEnabled": false,
+        "DisplayId": ""
+    }
+}
