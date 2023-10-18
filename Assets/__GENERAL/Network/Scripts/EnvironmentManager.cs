@@ -16,7 +16,7 @@ namespace HCIG {
         Lobby = -1,
         None = 0,
 
-        CHANGE_NAME_OF_THIS = 1,    // The AVRP-Student Scene -> has to be named the same way like your scene in the "__STUDENTS"-Folder, so the system can correctly load the scene when selected
+        OUR_PROJECT_SCENE = 1,    // The AVRP-Student Scene -> has to be named the same way like your scene in the "__STUDENTS"-Folder, so the system can correctly load the scene when selected
 
         Example = 2,
     }
@@ -79,9 +79,9 @@ namespace HCIG {
 
                     Debug.Log("SCENE - " + name);
 
-                    if (name == Scene.CHANGE_NAME_OF_THIS.ToString()) {
+                    if (name == Scene.OUR_PROJECT_SCENE.ToString()) {
                         Debug.Log(1);
-                        Scene = Scene.CHANGE_NAME_OF_THIS;
+                        Scene = Scene.OUR_PROJECT_SCENE;
                         return;
                     }
 
