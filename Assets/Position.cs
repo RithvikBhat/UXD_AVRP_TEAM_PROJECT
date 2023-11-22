@@ -19,6 +19,6 @@ public class Position : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(BaseManager.Instance.Camera.transform.position.x, 0, BaseManager.Instance.Camera.transform.position.z);
+        transform.localPosition = new Vector3(BaseManager.Instance.Camera.transform.position.x, 0, BaseManager.Instance.Camera.transform.position.z);
     }
 }
