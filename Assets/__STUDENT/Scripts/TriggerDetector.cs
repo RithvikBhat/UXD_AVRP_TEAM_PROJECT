@@ -34,6 +34,7 @@ public class TriggerDetector : MonoBehaviour
         {
             // green
             _material.color = new Color(0, 1, 0, 0.2f);
+            ScoreManager.scoreCount += 1;
         }
         else
         {
