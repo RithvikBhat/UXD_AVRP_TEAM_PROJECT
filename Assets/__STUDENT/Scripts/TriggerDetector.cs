@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public enum TriggerObjects
@@ -27,14 +28,27 @@ public class TriggerDetector : MonoBehaviour
         // default - red
         _material.color = new Color(1, 0, 0, 0.2f);
     }
+    void AddScore()
+    {
+
+    }
 
     void Update()
     {
+        
         if (_objects.Count > 0)
         {
             // green
             _material.color = new Color(0, 1, 0, 0.2f);
-            ScoreManager.scoreCount += 1;
+            if (_objects.Count == 1)
+            {
+                ScoreManager.scoreCount = 1;
+
+            }
+            if(_objects.Count == 2)
+            {
+                ScoreManager.scoreCount = 2;
+            }
         }
         else
         {
