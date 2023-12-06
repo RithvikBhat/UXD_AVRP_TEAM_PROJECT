@@ -19,7 +19,9 @@ public class TriggerDetector : MonoBehaviour
     [SerializeField]
     private TriggerObjects _type;
 
-    private List<Collider> _objects = new List<Collider>();
+    private bool _placed = false;
+
+    //private List<Collider> _objects = new List<Collider>();
 
     void Start()
     {
@@ -36,19 +38,20 @@ public class TriggerDetector : MonoBehaviour
     void Update()
     {
         
-        if (_objects.Count > 0)
+        if (_placed)
         {
             // green
             _material.color = new Color(0, 1, 0, 0.2f);
-            if (_objects.Count == 1)
-            {
-                ScoreManager.scoreCount = 1;
+            //if (_objects.Count == 1)
+            //{
+            //    ScoreManager.scoreCount = 1;
 
-            }
-            if(_objects.Count == 2)
-            {
-                ScoreManager.scoreCount = 2;
-            }
+            //}
+            //else if(_objects.Count == 2)
+            //{
+            //    ScoreManager.scoreCount = 2;
+            //}
+
         }
         else
         {
@@ -69,7 +72,8 @@ public class TriggerDetector : MonoBehaviour
 
         if(triggerObject.Type == _type)
         {
-            _objects.Add(other);
+            ScoreManager.scoreCount++;
+         _placed = true;
         }
     }
 
@@ -95,7 +99,8 @@ public class TriggerDetector : MonoBehaviour
 
         if (triggerObject.Type == _type)
         {
-            _objects.Remove(other);
+            ScoreManager.scoreCount--;
+         _placed = false;
         }
     }
 }
