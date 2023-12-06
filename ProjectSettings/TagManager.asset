@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trigger
+  - Door 1 Zone
+  - Door 1 Zone Exit
   layers:
   - Default
   - TransparentFX
