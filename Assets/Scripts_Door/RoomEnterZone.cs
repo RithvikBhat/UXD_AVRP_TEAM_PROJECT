@@ -13,7 +13,7 @@ public class RoomEnterZone : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Door 1 Zone")
+        if (other.gameObject.tag == "MovementTrigger")
         {
             door1.SetActive(false);
         }

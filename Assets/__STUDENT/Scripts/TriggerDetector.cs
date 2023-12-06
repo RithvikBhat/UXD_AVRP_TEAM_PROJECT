@@ -27,14 +27,21 @@ public class TriggerDetector : MonoBehaviour
         // default - red
         _material.color = new Color(1, 0, 0, 0.2f);
     }
-
-    void Update()
+    void AddScore()
     {
         if (_objects.Count > 0)
         {
+            ScoreManager.scoreCount++;
+        }
+    }
+    void Update()
+    {
+        if ((_objects.Count > 0) && (_objects.Count < 6))
+        {
             // green
             _material.color = new Color(0, 1, 0, 0.2f);
-            ScoreManager.scoreCount += 1;
+            //ScoreManager.scoreCount += 1;
+            
         }
         else
         {
