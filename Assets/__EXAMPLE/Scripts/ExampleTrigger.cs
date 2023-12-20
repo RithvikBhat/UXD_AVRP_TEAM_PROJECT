@@ -19,7 +19,7 @@ public class ExampleTrigger : MonoBehaviour
 
     void Update()
     {
-        if (_objects.Count > 0)
+        if (_objects.Count > 5)
         {
             // green
             _material.color = new Color(0, 1, 0, 0.2f);

@@ -347,9 +347,6 @@ MonoBehaviour:
   - Scene: 1
     Avatar: {fileID: 6176536379848071234, guid: e1239f85162017a44bd9ac318d26e25d,
       type: 3}
-  - Scene: -1
-    Avatar: {fileID: 4925200683880397491, guid: f73ef540853960744ab5a7b0ac2c13a8,
-      type: 3}
 --- !u!114 &4197292901606567898
 MonoBehaviour:
   m_ObjectHideFlags: 0
