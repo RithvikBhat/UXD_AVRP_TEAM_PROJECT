@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TimerCafe : MonoBehaviour
 {
-    [SerializeField] private TextMeshPro timerText; [SerializeField] private float totalTime = 60f; // Set the total time in seconds
+    [SerializeField] private Text timerText; [SerializeField] private float totalTime = 60f; // Set the total time in seconds
 
     private float currentTime;
 
