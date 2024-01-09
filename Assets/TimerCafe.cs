@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TimerCafe : MonoBehaviour
+public class CafeTimer: MonoBehaviour
 {
-    [SerializeField] private Text timerText; [SerializeField] private float totalTime = 60f; // Set the total time in seconds
+    [SerializeField] private Text timerText;
+    [SerializeField] private float totalTime = 60f; // Set the total time in seconds
 
     private float currentTime;
 
@@ -59,4 +59,9 @@ public class TimerCafe : MonoBehaviour
         UpdateTimerDisplay();
     }
 
+    // Make sure this method is public
+    public void StartTimerWithButton()
+    {
+        ResetTimer();
+    }
 }
