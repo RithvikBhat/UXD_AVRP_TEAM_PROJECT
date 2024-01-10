@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class ExampleTrigger : MonoBehaviour
 {
+    public int ScoreCount
+    {
+        get
+        {
+            return _objects.Count;
+        }
+    }
+
 
     private Material _material;
 

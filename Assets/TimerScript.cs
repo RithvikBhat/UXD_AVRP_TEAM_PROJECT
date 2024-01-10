@@ -9,6 +9,8 @@ public class TimerScript : MonoBehaviour
 
     private float currentTime;
 
+    private bool _isTimerRunning = false;
+
     private void Start()
     {
         ResetTimer();
@@ -16,7 +18,7 @@ public class TimerScript : MonoBehaviour
 
     private void Update()
     {
-        if (IsTimerRunning())
+        if (_isTimerRunning)
         {
             UpdateTimer();
         }
@@ -30,6 +32,11 @@ public class TimerScript : MonoBehaviour
     {
         currentTime -= Time.deltaTime;
         UpdateTimerDisplay();
+
+        if(currentTime < 0)
+        {
+            _isTimerRunning = false;
+        }
     }
 
     private void UpdateTimerDisplay()
@@ -39,11 +46,6 @@ public class TimerScript : MonoBehaviour
         float seconds = Mathf.FloorToInt(currentTime % 60);
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
-
-    private bool IsTimerRunning()
-    {
-        return currentTime > 0;
     }
 
     private void HandleTimerCompletion()
@@ -56,6 +58,11 @@ public class TimerScript : MonoBehaviour
     {
         currentTime = totalTime;
         UpdateTimerDisplay();
+    }
+
+    public void StartTimer()
+    {
+        _isTimerRunning = true;
     }
 
 }
