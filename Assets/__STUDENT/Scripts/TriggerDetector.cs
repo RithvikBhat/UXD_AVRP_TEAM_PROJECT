@@ -42,16 +42,6 @@ public class TriggerDetector : MonoBehaviour
         {
             // green
             _material.color = new Color(0, 1, 0, 0.2f);
-            //if (_objects.Count == 1)
-            //{
-            //    ScoreManager.scoreCount = 1;
-
-            //}
-            //else if(_objects.Count == 2)
-            //{
-            //    ScoreManager.scoreCount = 2;
-            //}
-
         }
         else
         {
@@ -63,29 +53,17 @@ public class TriggerDetector : MonoBehaviour
     /// <summary>
     /// Gets called once when an object "collider" enters the trigger area
     /// </summary>
-    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (!other.TryGetComponent<TriggerObject>(out TriggerObject triggerObject)){
             return;
         }
 
-
-
         if(triggerObject.Type == _type)
         {
             ScoreManager.scoreCount++;
-         _placed = true;
+            _placed = true;
         }
-    }
-
-    /// <summary>
-    /// Gets called every frame and for every "collider" that touches the trigger
-    /// </summary>
-    /// <param name="other"></param>
-    private void OnTriggerStay(Collider other)
-    {
-
     }
 
     /// <summary>
