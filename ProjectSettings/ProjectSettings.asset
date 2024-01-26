@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: HCIG
-  productName: Augmented and Virtual Reality Applications - Practical
+  companyName: THI
+  productName: Escape With Duo - GroupH
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -140,7 +140,10 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 6796687855100562641, guid: e3f1f33df9caf674eb99185f02f02bd1, type: 2}
+  - {fileID: 11400000, guid: 40b335602ee68f2418c241fb83e7c592, type: 2}
+  - {fileID: 6514414938688635369, guid: f1cfdd4133d905947be52d9a61898ffa, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

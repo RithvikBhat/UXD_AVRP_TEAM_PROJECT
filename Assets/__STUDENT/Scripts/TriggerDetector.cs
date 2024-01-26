@@ -70,6 +70,8 @@ public class TriggerDetector : MonoBehaviour
             return;
         }
 
+
+
         if(triggerObject.Type == _type)
         {
             ScoreManager.scoreCount++;

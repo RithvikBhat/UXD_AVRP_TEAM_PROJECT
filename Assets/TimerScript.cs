@@ -22,10 +22,6 @@ public class TimerScript : MonoBehaviour
         {
             UpdateTimer();
         }
-        else
-        {
-            HandleTimerCompletion();
-        }
     }
 
     private void UpdateTimer()

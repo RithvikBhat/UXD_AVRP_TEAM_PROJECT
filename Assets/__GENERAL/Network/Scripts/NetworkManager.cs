@@ -131,7 +131,7 @@ namespace HCIG.Network {
 
         private void Start() {
             // Initial
-            if (!_isSwitching && ApplicationManager.Instance.IsEditor) {
+            if (!_isSwitching) {
                 EnterOfflineRoom();
             }
         }

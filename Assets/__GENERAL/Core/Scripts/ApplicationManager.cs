@@ -67,11 +67,7 @@ namespace HCIG {
             if (IsAndroid) {
                 Mode = Mode.XR;
             } else {
-                if (IsEditor) {
-                    Mode = _desktopStartMode;
-                } else {
-                    Mode = Mode.PC;
-                }
+                Mode = _desktopStartMode;
             }
         }
 
@@ -109,7 +105,7 @@ namespace HCIG {
 
         private IEnumerator InitializeXR() {
 
-            if (IsEditor && XRGeneralSettings.Instance.Manager.activeLoader == null) {
+            if (XRGeneralSettings.Instance.Manager.activeLoader == null) {
 
                 yield return XRGeneralSettings.Instance.Manager.InitializeLoader();
 
