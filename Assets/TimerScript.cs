@@ -1,14 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-    [SerializeField] private Text timerText; [SerializeField] private float totalTime = 60f; // Set the total time in seconds
+    [SerializeField] private Image background;
+    [SerializeField] private Text timerText;
+    [SerializeField] private float totalTime = 60f;
 
     private float currentTime;
-
     private bool _isTimerRunning = false;
 
     private void Start()
@@ -33,15 +33,16 @@ public class TimerScript : MonoBehaviour
         currentTime -= Time.deltaTime;
         UpdateTimerDisplay();
 
-        if(currentTime < 0)
+        if (currentTime <= 0)
         {
             _isTimerRunning = false;
+            currentTime = 0; // Ensure the timer doesn't go negative
+            HandleTimerCompletion();
         }
     }
 
     private void UpdateTimerDisplay()
     {
-        // Display the timer in minutes and seconds format
         float minutes = Mathf.FloorToInt(currentTime / 60);
         float seconds = Mathf.FloorToInt(currentTime % 60);
 
@@ -51,7 +52,18 @@ public class TimerScript : MonoBehaviour
     private void HandleTimerCompletion()
     {
         Debug.Log("Time's up!");
-        // Add any additional actions you want to perform when the timer reaches zero
+        // Additional actions you want to perform when the timer reaches zero
+
+        ShowGameOverText();
+    }
+
+    private void ShowGameOverText()
+    {
+        // Display "Game Over!" in the timer text
+        timerText.text = "Game Over!";
+        // Add any additional actions related to game over here
+
+        background.color = Color.red;
     }
 
     public void ResetTimer()
@@ -64,5 +76,4 @@ public class TimerScript : MonoBehaviour
     {
         _isTimerRunning = true;
     }
-
 }
